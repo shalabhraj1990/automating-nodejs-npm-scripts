@@ -7,7 +7,7 @@ var express_1 = __importDefault(require("express"));
 var app = (0, express_1.default)();
 //const port = process.env.PORT || 8080;
 var port = process.env.npm_package_config_port || 8080; // using package.json config
-var runningMessage = "server is running on port " + port;
+var runningMessage = "server is running on port " + port + " watch mode on";
 app.get('/', function (req, res) {
     console.log('API was successfully requested');
     res.send(runningMessage);
