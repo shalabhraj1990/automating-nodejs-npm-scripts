@@ -15,7 +15,8 @@
     "start:dev": "nodemon index.js",
     "build:watch": "npm run tsc -- --watch",
     "start:dev:watch": "npm-run-all tsc --parallel  start:dev  build:watch",
-    "start:tsdev":"ts-node-dev index.ts"
+    "start:tsdev":"ts-node-dev index.ts",
+    "start:debug":"nodemon --inspect index.js"
   },
   "repository": {
     "type": "git",
