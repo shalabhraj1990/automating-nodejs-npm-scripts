@@ -12,6 +12,7 @@
     "tsc": "tsc",
     "sass": "sass css-processor/style.scss css-processor/style.css",
     "start:dev": "nodemon index.js",
+    "build":"npm run tsc",
     "build:watch": "npm run tsc -- --watch",
     "start:dev:watch": "npm-run-all tsc --parallel  start:dev  build:watch",
     "start:tsdev": "ts-node-dev index.ts",
